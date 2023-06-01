@@ -1,0 +1,20 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import styles from './Planet.module.css';
+
+export const Planet = ({planets}) => {
+    console.log(planets);
+
+    return (
+        <div className={styles.card}>
+            <Link to={`/planets/${planets.url}`} className={styles.link}>
+                <div className={styles.head}>{planets.name}</div>
+                <div>
+                    <p>Климат - {planets.climate}</p>
+                    <p>Диамер - {planets.diameter}</p>
+                    <p>Популяция - {planets.population}</p>
+                </div>
+            </Link>
+        </div>
+    );
+};

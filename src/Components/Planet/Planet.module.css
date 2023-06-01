@@ -1,0 +1,13 @@
+.card {
+    border: #282c34 solid 1px;
+    border-radius: 4px;
+}
+
+.head {
+    font-size: 25px;
+}
+
+.link {
+    text-decoration: none;
+    color: #282c34;
+}

@@ -13,6 +13,7 @@ export const Planets = () => {
     return (
       <div>
         <h2 className={styles.title}>Планеты</h2>
+          <div>Для перехода на детальную информацию кликните по картчоке</div>
           <div className={styles.gridContainer}>
               {planet.map((planets, id) => {
                   return (

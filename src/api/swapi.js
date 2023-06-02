@@ -22,7 +22,7 @@ export const getPlanets = async () => {
 
 export const getItem = async (id) => {
     try {
-      const result = await axios.get(`${baseUrl}/planets/${id}/json`);
+      const result = await axios.get(`${baseUrl}/planets/${id}`);
       return result;
     } catch (err) {
         console.log(err);

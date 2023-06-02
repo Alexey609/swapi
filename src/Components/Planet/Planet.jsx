@@ -8,7 +8,7 @@ export const Planet = ({planets}) => {
     return (
         <div className={styles.card}>
             <Link to={`/planets/${url}`} className={styles.link}>
-                <div className={styles.head}>{planets.name}</div>
+                <h2>{planets.name}</h2>
                 <div>
                     <p>Климат - {planets.climate}</p>
                     <p>Диамер - {planets.diameter}</p>

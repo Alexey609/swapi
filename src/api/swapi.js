@@ -2,13 +2,58 @@ import axios from 'axios';
 
 export const baseUrl = 'https://swapi.dev/api/';
 
-export const getData = async () => {
+export const getPeopleCount = async () => {
   try {
-     const result = await axios.get(baseUrl).then(({ data }) => data);
+     const result = await axios.get(`${baseUrl}/people/`).then(({ data }) => data);
      return result;
   }  catch (err) {
       console.log(err);
   }
+};
+
+export const getPlanetsCount = async () => {
+    try {
+        const result = await axios.get(`${baseUrl}/planets/`).then(({ data }) => data);
+        return result;
+    }  catch (err) {
+        console.log(err);
+    }
+};
+
+export const getShipsCount = async () => {
+    try {
+        const result = await axios.get(`${baseUrl}/starships/`).then(({ data }) => data);
+        return result;
+    }  catch (err) {
+        console.log(err);
+    }
+};
+
+export const getFilmsCount = async () => {
+    try {
+        const result = await axios.get(`${baseUrl}/films/`).then(({ data }) => data);
+        return result;
+    }  catch (err) {
+        console.log(err);
+    }
+};
+
+export const getVehiclesCount = async () => {
+    try {
+        const result = await axios.get(`${baseUrl}/vehicles/`).then(({ data }) => data);
+        return result;
+    }  catch (err) {
+        console.log(err);
+    }
+};
+
+export const getSpeciesCount = async () => {
+    try {
+        const result = await axios.get(`${baseUrl}/species/`).then(({ data }) => data);
+        return result;
+    }  catch (err) {
+        console.log(err);
+    }
 };
 
 export const getPlanets = async () => {

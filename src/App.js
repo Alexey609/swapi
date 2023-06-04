@@ -1,5 +1,4 @@
 import { Route, Routes } from 'react-router-dom';
-import { Container } from 'react-bootstrap';
 import { Header, Item } from './Components';
 import {Home, Planets, Stats} from "./Pages";
 import './App.css';

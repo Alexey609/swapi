@@ -42,7 +42,7 @@ export const Stats = () => {
              <p>Расы/виды - {species}</p>
         </Row>
         <Row>
-            <Col md="12">
+            <Col md="12" sm="10" xs="9">
               <Image src={stats} className="m-5" fluid />
             </Col>
         </Row>

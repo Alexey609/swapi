@@ -7,7 +7,7 @@ export const Home = () => {
     return (
         <Container>
             <Row>
-                <Col md="12">
+                <Col md="11" sm="9" xs="8">
                     <Image className="m-5" src={homePicture} fluid />
                 </Col>
             </Row>

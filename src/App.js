@@ -8,14 +8,12 @@ function App() {
   return (
     <div className="App">
        <Header/>
-       <Container>
           <Routes>
              <Route path="/" element={<Home/>}/>
              <Route path="/stats" element={<Stats/>}/>
              <Route path="/planets" element={<Planets/>}/>
              <Route path="/planets/:id" element={<Item/>}/>
           </Routes>
-       </Container>
     </div>
   );
 }
